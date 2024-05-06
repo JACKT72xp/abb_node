@@ -1,0 +1,7 @@
+{
+    "name": "mi-lambda-function",
+    "version": "1.0.0",
+    "description": "Función Lambda para obtener la versión de la aplicación",
+    "main": "index.js"
+  }
+  

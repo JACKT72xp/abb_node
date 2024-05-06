@@ -1,0 +1,55 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "API de Mi Aplicación",
+      "version": "1.0.0",
+      "description": "Documentación de la API de Mi Aplicación"
+    },
+    "paths": {
+      "/version": {
+        "get": {
+          "summary": "Obtener la versión de la aplicación",
+          "responses": {
+            "200": {
+              "description": "Versión de la aplicación",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "version": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/": {
+        "get": {
+          "summary": "Contar visitantes únicos",
+          "responses": {
+            "200": {
+              "description": "Número de visitantes únicos",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "uniqueVisitorsCount": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

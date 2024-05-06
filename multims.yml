@@ -1,0 +1,23 @@
+kubernetesContext: mi-cuenta-publica-context
+registryOrDocker: DockerHub
+registry: ""
+technology: Node
+namespace: local
+useDefaultKubeConfig: true
+kubeConfigPath: /Users/jacktorpoco/.kube/config
+uid: a1d1c518-5ad9-48dc-80b6-be2881b00aba
+appName: abb_node
+application:
+  start_run: node index.js
+  port: 3000
+multiservices: []
+database:
+  type: postgres
+  active: true
+  db: postgres
+  user: postgres
+  password: password
+  name: mydb
+  external: true
+installationcommands:
+- ""

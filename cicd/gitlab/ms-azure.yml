@@ -1,0 +1,11 @@
+stages:
+- deploy
+
+deploy:
+  stage: deploy
+  image: mcr.microsoft.com/azure-cli
+  script:
+  - az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET --tenant $AZURE_TENANT_ID
+  - az webapp up --name my-webapp --resource-group my-resource-group --plan my-app-service-plan
+  only:
+  - main
